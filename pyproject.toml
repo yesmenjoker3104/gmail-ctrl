@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "gmail-ctrl"
+version = "1.0.0"
+description = "Gmail CLI plugin for assist-chat"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+GMailCtrlCli = "gmail_ctrl.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
